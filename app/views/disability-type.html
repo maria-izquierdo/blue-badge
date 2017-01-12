@@ -1,0 +1,59 @@
+{% extends "layout.html" %} {% block page_title %} Start page example {% endblock %} {% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %} {% block header_class %}
+<!-- blank to remove the proposition header -->
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+    <div class="breadcrumbs">
+        <ol>
+            <li><a href="https://www.gov.uk">Home</a></li>
+            <li><a href="">Section</a></li>
+            <li>Subsection</li>
+        </ol>
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h2 class="heading-medium">
+              What type of disability...?
+            </h2>
+
+            <form action="/apply">
+
+                <div class="form-group">
+                    <fieldset>
+
+                        <legend class="visuallyhidden">please select </legend>
+
+                        <label class="block-label">
+                            <input type="radio" name="dis-type" value="dis-1"> blind (severely sight impaired)
+                        </label>
+
+                        <label class="block-label">
+                            <input type="radio" name="dis-type" value="dis-2"> Certificate of Vision Impairment (CVI)
+                        </label>
+
+                        <label class="block-label">
+                            <input type="radio" name="dis-type" value="dis-3"> DVLA
+                        </label>
+                        <label class="block-label">
+                            <input type="radio" name="dis-type" value="none"> I don't have any of these
+                        </label>
+
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                  <input type="submit" class="button" value="Continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

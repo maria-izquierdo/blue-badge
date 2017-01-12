@@ -1,0 +1,52 @@
+{% extends "layout.html" %} {% block page_title %} Start page example {% endblock %} {% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %} {% block header_class %}
+<!-- blank to remove the proposition header -->
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+    <div class="breadcrumbs">
+        <ol>
+            <li><a href="https://www.gov.uk">Home</a></li>
+            <li><a href="">Section</a></li>
+            <li>Subsection</li>
+        </ol>
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h2 class="heading-medium">
+              Are these details correct?
+            </h2>
+
+            <form action="/disability-type">
+
+                <div class="form-group">
+                    <fieldset class="inline">
+
+                        <legend class="visuallyhidden">Are these details correct?</legend>
+
+                        <label class="block-label">
+                            <input type="radio" name="detailscorrect" value="yes"> Yes
+                        </label>
+
+                        <label class="block-label">
+                            <input type="radio" name="detailscorrect" value="no"> No
+                        </label>
+
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                  <input type="submit" class="button" value="Continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

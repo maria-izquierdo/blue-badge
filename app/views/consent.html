@@ -1,0 +1,59 @@
+{% extends "layout.html" %} {% block page_title %} Start page example {% endblock %} {% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %} {% block header_class %}
+<!-- blank to remove the proposition header -->
+{% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+    <div class="breadcrumbs">
+        <ol>
+            <li><a href="https://www.gov.uk">Home</a></li>
+            <li><a href="">Section</a></li>
+            <li>Subsection</li>
+        </ol>
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h2 class="heading-medium">
+              We need to access data about you held by a department. Which department would you like to use?
+            </h2>
+
+            <form action="/personal-data">
+
+                <div class="form-group">
+                    <fieldset>
+
+                        <legend class="visuallyhidden">We need to access data about you held by a department. Which department would you like to use?</legend>
+
+                        <label class="block-label">
+                            <input type="radio" name="source" value="dwp"> Department for Work and Pensions
+                        </label>
+
+                        <label class="block-label">
+                            <input type="radio" name="source" value="hmrc"> HM Revenue & Customs
+                        </label>
+
+                        <label class="block-label">
+                            <input type="radio" name="source" value="dvla"> Driver and Vehicle Licensing Agency
+                        </label>
+                        <label class="block-label">
+                            <input type="radio" name="source" value="none"> I don't want to use data from a department
+                        </label>
+
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                  <input type="submit" class="button" value="Continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}
