@@ -28,3 +28,12 @@ $path: "/public/images/";
 }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.match-data {
+margin: 1em 0 1em;
+padding: 2em 0 1em 2em;
+color: $text-colour;
+background: $highlight-colour;
+border: 1px solid $border-colour;
+text-align: left;
+}
